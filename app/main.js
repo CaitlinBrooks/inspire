@@ -5,8 +5,12 @@ class app {
   constructor() {
     this.controllers = {
       weatherController: new WeatherController()
+      // imageController: new ImageController()
+      // quoteController: new QuoteController()
+      // todoController: new todoController()
     }
   }
 }
 
+// @ts-ignore
 window.app = new app()  
