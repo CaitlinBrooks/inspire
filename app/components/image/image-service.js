@@ -11,6 +11,7 @@ const imgApi = axios.create({
 
 export default class ImageService {
 	getImage(callWhenDone) {
+		imgApi.get('images')
 		// ^^^^^^^ How do you call this function?
 		console.log("Looking for a good pic")
 		imgApi().then(res => {
