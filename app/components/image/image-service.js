@@ -2,7 +2,6 @@ const url = '//bcw-getter.herokuapp.com/?url=';
 const url2 = 'http://www.splashbase.co/api/v1/images/random/'
 const apiUrl = url + encodeURIComponent(url2);
 
-
 // @ts-ignore
 const imgApi = axios.create({
 	baseURL: apiUrl,
@@ -10,8 +9,12 @@ const imgApi = axios.create({
 });
 
 export default class ImageService {
+	constructor() {
+
+	}
+
 	getImage(callWhenDone) {
-		imgApi.get('images') //ask about this
+		imgApi.get() //ask about this
 		// ^^^^^^^ How do you call this function?
 		console.log("Looking for a good pic")
 		imgApi().then(res => {
