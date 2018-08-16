@@ -34,7 +34,6 @@ It is your responsibility to render each piece of the data from the services out
     user: { type: String }                             //the server will do this for you
 }
 ```
-
 ### Post Request Method
 
 #### Create Todo
