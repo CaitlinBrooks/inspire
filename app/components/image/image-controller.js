@@ -1,14 +1,14 @@
 //Your ImageService is a global class what can you do here to instantiate it?
 import ImageService from "./image-service.js"
 
-function drawImages(images) {
+function getImages(images) {
   let template = ''
   for (let i = 0; i < images.length; i++) {
     let image = images[i];
     template += `
-    <div onclick='app.controllers.gameController.setDragon(${image.id})' class="dragon">
-    <h4>${image.name}</h4>
-    <img src="${image.imgUrl}" alt="">
+    <div class="image">
+    <p>${image.name}</p>
+    <img src="${image.imgUrl}" alt="imageUrl">
     </div>
     `
   }
