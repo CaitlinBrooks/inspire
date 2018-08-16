@@ -41,13 +41,13 @@ export default class TodoController {
 		//PASSES THE NEW TODO TO YOUR SERVICE
 		//DON'T FORGET TO REDRAW THE SCREEN WITH THE NEW TODO
 		//YOU SHOULDN'T NEED TO CHANGE THIS
-		todoService.addTodo(todo, getTodos)
+		// todoService.addTodo(todo, getTodos)
 		//^^^^^^^ EXAMPLE OF HOW TO GET YOUR TOODOS AFTER AN EDIT
 	}
 
 	toggleTodoStatus(todoId) {
 		// asks the service to edit the todo status
-		todoService.toggleTodoStatus(todoId, getTodos)
+		// todoService.toggleTodoStatus(todoId, getTodos)
 		// YEP THATS IT FOR ME
 	}
 
