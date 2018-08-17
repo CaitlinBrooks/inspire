@@ -2,3 +2,10 @@ strikethrough {
   text-decoration-line: line-through
 }
 /* used for todo list when one todo is completed  */
+
+bg {
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
