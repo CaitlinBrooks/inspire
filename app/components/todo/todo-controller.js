@@ -32,9 +32,10 @@ function draw(todos) {
 			}
 	})
 	template += `
-<form onsubmit="app.controllers.todoController.addTodoFromForm(e)">
-<input type="text" name"todo" placeholder="Get Milk">
+<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+<input type="text" name="newtodo" placeholder="Get Milk">
 <button type="submit">Add Item</button>
+</form>
 `
 
 	document.getElementById('todo').innerHTML = template
@@ -60,7 +61,8 @@ export default class TodoController {
 		// TAKE THE INFORMATION FORM THE FORM
 		let form = e.target
 		let todo = {
-			description: form.todo.value
+			description: form.newtodo.value
+
 			// DONT FORGET TO BUILD YOUR TODO OBJECT
 		}
 
