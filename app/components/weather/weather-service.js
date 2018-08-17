@@ -5,7 +5,7 @@ const apiUrl = url + encodeURIComponent(url2);
 // @ts-ignore
 const weatherApi = axios.create({
 	baseURL: apiUrl,
-	timeout: 3000
+	timeout: 5000
 });
 
 export default class WeatherService {
