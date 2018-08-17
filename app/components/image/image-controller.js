@@ -5,16 +5,13 @@ let imageService = new ImageService
 
 function drawImage(image) {
   console.log(image)
-  // let template = ''
-  // // for (let i = 0; i < images.length; i++) {
-  // //   let image = images[i];
-  // template += `
+  // let template = '
   //   <div class="image">
   //   <img src="${image.imgUrl}" alt="imageUrl">
   //   </div>
   //   `
 }
-//maybe write body instead of images to target?
+//maybe target body instead of images?
 
 // document.getElementById('body').innerHTML = template
 

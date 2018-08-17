@@ -14,5 +14,6 @@ export default class WeatherController {
 			console.log(weather);
 			//What can you do with this weather object?
 		})
+		//drawWeather -- to screen
 	}
 }
