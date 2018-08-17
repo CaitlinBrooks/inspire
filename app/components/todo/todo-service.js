@@ -50,9 +50,11 @@ export default class TodoService {
 			.catch(logError)
 	}
 
-	deleteTodo() {
-		// Umm this one is on you to write.... The method is a DELETE
+	deleteTodo(todoId, draw) {
+		// This one is mine to write -- delete method
 		let todo = todoList.find(todoElem => todoElem._id == todoElem);
+		todoApi.delete(todoId)
+		this.getTodos(draw)
 
 	}
 
