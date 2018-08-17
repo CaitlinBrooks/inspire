@@ -1,6 +1,6 @@
 import QuoteService from "./quote-service.js";
 
-let qs = new QuoteService
+let quoteService = new QuoteService
 
 
 export default class QuoteController {
@@ -9,7 +9,7 @@ export default class QuoteController {
 	}
 
 	getQuote() {
-		qs.getQuote(function (quote) {
+		quoteService.getQuote(function (quote) {
 			console.log('What is the quote', quote)
 		})
 	}
