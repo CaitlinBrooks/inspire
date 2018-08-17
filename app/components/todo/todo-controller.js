@@ -20,7 +20,7 @@ function draw(todos) {
 		if (completed == false) {
 			template += `
 	<input type="checkbox" id="${todo.description}"onchange="app.controllers.todoController.toggletodoStatus('${todo._id}')"/>
-	<label for ="${todo.description}">${todo.description}</label><button onclick="app.controllers.todocontroller.removeTodo('${todo._id}')"><button>Delete ToDo</button>
+	<label for ="${todo.description}">${todo.description}</label><button onclick="app.controllers.todocontroller.removeTodo('${todo._id}')">Delete ToDo</button>
 	`
 		} else
 			if (completed == true) {
