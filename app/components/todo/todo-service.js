@@ -53,6 +53,7 @@ export default class TodoService {
 	deleteTodo(todoId, draw) {
 		todoApi.delete(todoId)
 			.then(res => { //ask about this not being referenced
+				debugger
 				this.getTodos(draw)
 			})
 	}

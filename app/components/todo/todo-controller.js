@@ -7,6 +7,7 @@ let todoService = new TodoService
 
 // Use this getTodos function as your callback for all other edits
 function getTodos() {
+	debugger
 	//FYI DONT EDIT ME :)
 	todoService.getTodos(draw)
 }
@@ -37,7 +38,7 @@ function draw(todos) {
 
 export default class TodoController {
 	constructor() {
-		// IF YOU WANT YOUR TODO LIST TO DRAW WHEN THE PAGE FIRST LOADS WHAT SHOULD YOU CALL HERE???
+		getTodos()// IF YOU WANT YOUR TODO LIST TO DRAW WHEN THE PAGE FIRST LOADS WHAT SHOULD YOU CALL HERE???
 	}
 	// You will need four methods
 	// getTodos should request your api/todos and give an array of todos to your callback fn
