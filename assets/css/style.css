@@ -1,7 +1,7 @@
-strikethrough {
+/* strikethrough {
   text-decoration-line: line-through
 }
-/* used for todo list when one todo is completed  */
+used for todo list when one todo is completed  */
 
 body {
       height: 100%; 
