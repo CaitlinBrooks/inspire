@@ -1,8 +1,0 @@
-
-
-// export default class Weather {
-//   constructor(data) {
-
-//     this.
-//   }
-// }
