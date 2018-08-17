@@ -2,7 +2,8 @@ import TodoService from "./todo-service.js";
 
 
 
-var todoService = new TodoService
+
+let todoService = new TodoService
 
 // Use this getTodos function as your callback for all other edits
 function getTodos() {
@@ -13,7 +14,10 @@ function getTodos() {
 function draw(todos) {
 	//WHAT IS MY PURPOSE?
 	//BUILD YOUR TODO TEMPLATE HERE
-	var template = ''
+	let template = ''
+	todos.forEach(todo => {
+
+	})
 	//DONT FORGET TO LOOP
 }
 
