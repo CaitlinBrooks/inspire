@@ -1,11 +1,11 @@
 
 
-export default class Quote {
-  constructor(data) {
+// export default class Quote {
+//   constructor(data) {
 
-    this.id = data.id
-    this.quote = data.quote
-    this.author = data.author
-    this.permalink = data.permalink
-  }
-}
+//     this.id = data.id
+//     this.quote = data.quote
+//     this.author = data.author
+//     this.permalink = data.permalink
+//   }
+// }

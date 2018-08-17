@@ -6,9 +6,7 @@ let imageService = new ImageService
 function drawImage(image) {
   console.log(image)
   // let template = '
-  //   <div class="image">
   //   <img src="${image.imgUrl}" alt="imageUrl">
-  //   </div>
   //   `
 }
 //maybe target body instead of images?
