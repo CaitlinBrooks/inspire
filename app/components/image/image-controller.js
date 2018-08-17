@@ -5,7 +5,7 @@ let imageService = new ImageService
 
 function drawImage(image) {
   console.log(image)
-  document.getElementById('body').style.backgroundImage = `url('${image.largeUrl}')`
+  document.getElementById('body').style.backgroundImage = `url('${image.large_url}')`
 }
 // document.body.style.backgroundImage = "${image.imgUrl}">
 // let template = '
