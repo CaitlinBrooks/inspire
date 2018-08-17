@@ -1,6 +1,6 @@
 import TodoService from "./todo-service.js";
 
-
+//need to invoke addtodo
 
 
 let todoService = new TodoService
@@ -38,7 +38,8 @@ function draw(todos) {
 `
 
 	document.getElementById('todo').innerHTML = template
-	//DONT FORGET TO LOOP
+	//DONT FORGET TO LOOP //is a for loop needed? if else does not accomplish what I want?
+
 }
 
 
