@@ -16,7 +16,12 @@ function draw(todos) {
 	//BUILD YOUR TODO TEMPLATE HERE
 	let template = ''
 	todos.forEach(todo => {
-
+		let completed = todo.completed
+		if (completed == false) {
+			template += `
+	<input type="checkbox" id="${todo.description}" onchange="app.controllers.todoController.toggletodoStatus('${todo._id}')"/>
+	`
+		}
 	})
 	//DONT FORGET TO LOOP
 }
