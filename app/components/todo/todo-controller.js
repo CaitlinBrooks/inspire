@@ -26,9 +26,10 @@ function draw(todos) {
 			if (completed) {
 				template += `
 				<input type="checkbox" checked id="${todo.description}"onchange="app.controllers.todoController.toggletodoStatus('${todo._id}')" checked/>
-				<label for ="${todo.description}">${todo.description}</label><button onclick="app.controllers.todoController.removeTodo('${todo._id}')"><button>Delete ToDo</button>
+				<label for ="${todo.description}">${todo.description}</label><button onclick="app.controllers.todoController.removeTodo('${todo._id}')">Delete ToDo</button>
 				`
 			}
+
 	})
 	template += `
 <form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
