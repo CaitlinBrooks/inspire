@@ -7,7 +7,6 @@ let todoService = new TodoService
 
 // Use this getTodos function as your callback for all other edits
 function getTodos() {
-	debugger
 	//FYI DONT EDIT ME :)
 	todoService.getTodos(draw)
 }
@@ -32,6 +31,11 @@ function draw(todos) {
 				`
 			}
 	})
+	template += `
+<form onsubmit="app.controllers.todoController.addTodoFromForm(e)">
+<input type="text" name"todo" placeholder="Get Milk">
+<button type="submit">Add ToDo</button>
+`
 	//DONT FORGET TO LOOP
 }
 
