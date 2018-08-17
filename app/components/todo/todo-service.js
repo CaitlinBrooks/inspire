@@ -26,12 +26,12 @@ export default class TodoService {
 			.catch(logError)
 	}
 
-	addTodo(todo, draw) {
+	addTodo(todo, getTodos) {
 		// WHAT IS THIS FOR???
 		todoApi.post('', todo)
 			.then(function (res) { // <-- WHAT DO YOU DO AFTER CREATING A NEW TODO?
 				todoList.push(res)
-				this.getTodos(draw)
+				getTodos()
 			})
 			.catch(logError)
 	}
@@ -40,9 +40,9 @@ export default class TodoService {
 		// MAKE SURE WE THINK THIS ONE THROUGH
 		//STEP 1: Find the todo by its index **HINT** todoList
 		let todo = todoList.find(todoElem => todoElem._id); ///MODIFY THIS LINE 
-		todo.completed = !todo.completed // can be either true or false, it's a switch to toggle.
+		let completed = !todo.completed // can be either true or false, it's a switch to toggle.
 		//STEP 2: Change the completed flag to the opposite of what is is **HINT** todo.completed = !todo.completed
-		todoApi.put(todoId, todo)
+		todoApi.put(todoId, { completed })
 			.then(function (res) {
 				//DO YOU WANT TO DO ANYTHING WITH THIS?
 				draw(res)

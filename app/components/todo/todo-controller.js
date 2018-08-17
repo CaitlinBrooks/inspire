@@ -19,13 +19,13 @@ function draw(todos) {
 		let completed = todo.completed
 		if (completed == false) {
 			template += `
-	<input type="checkbox" id="${todo.description}"onchange="app.controllers.todoController.toggletodoStatus('${todo._id}')"/>
+	<input type="checkbox" id="${todo.description}"onchange="app.controllers.todoController.toggleTodoStatus('${todo._id}')"/>
 	<label for ="${todo.description}">${todo.description}</label><button onclick="app.controllers.todocontroller.removeTodo('${todo._id}')">Delete ToDo</button>
 	`
 		} else
-			if (completed == true) {
+			if (completed) {
 				template += `
-				<input type="checkbox" id="${todo.description}"onchange="app.controllers.todoController.toggletodoStatus('${todo._id}')" checked/>
+				<input type="checkbox" checked id="${todo.description}"onchange="app.controllers.todoController.toggletodoStatus('${todo._id}')" checked/>
 				<div class="strikethrough">
 				<label for ="${todo.description}">${todo.description}</label><button onclick="app.controllers.todocontroller.removeTodo('${todo._id}')"><button>Delete ToDo</button>
 				`
