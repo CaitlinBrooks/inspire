@@ -19,27 +19,28 @@ export default class TodoService {
 		console.log("Getting the Todo List")
 		todoApi.get('')
 			.then((res) => { // <-- WHY IS THIS IMPORTANT????
-				console.log(draw.data.data)
-				todoList = (draw.data.data)
-				draw(draw.data.data)
+				console.log(res.data.data)
+				todoList = (res.data.data)
+				draw(res.data.data)
 			})
 			.catch(logError)
 	}
 
-	addTodo(todo) {
+	addTodo(todo, draw) {
 		// WHAT IS THIS FOR???
 		todoApi.post('', todo)
 			.then(function (res) { // <-- WHAT DO YOU DO AFTER CREATING A NEW TODO?
-
+				todoList.push(res)
+				this.getTodos(draw)
 			})
 			.catch(logError)
 	}
 
-	toggleTodoStatus(todoId) {
+	toggleTodoStatus(todoId, draw) {
 		// MAKE SURE WE THINK THIS ONE THROUGH
 		//STEP 1: Find the todo by its index **HINT** todoList
 
-		var todo = {} ///MODIFY THIS LINE
+		var todo = todoList.find(todoElem => todoElem._id); ///MODIFY THIS LINE // Why isn't this let?
 
 		//STEP 2: Change the completed flag to the opposite of what is is **HINT** todo.completed = !todo.completed
 		todoApi.put(todoId, todo)

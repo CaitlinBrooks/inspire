@@ -12,9 +12,7 @@ function drawImage(image) {
 //   <img src="${image.imgUrl}" alt="imageUrl">
 //   `
 
-//maybe target body instead of images?
-
-//background repeat?
+//background repeat: https://www.w3schools.com/howto/howto_css_full_page.asp
 
 export default class ImageController {
   constructor() {
