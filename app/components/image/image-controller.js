@@ -4,8 +4,8 @@ import ImageService from "./image-service.js"
 let imageService = new ImageService
 
 function drawImage(image) {
-  console.log(drawImage)
-  document.getElementById('body').style.backgroundImage = `url(${`largeUrl`})`
+  console.log(image)
+  document.getElementById('body').style.backgroundImage = `url('${image.largeUrl}')`
 }
 // document.body.style.backgroundImage = "${image.imgUrl}">
 // let template = '
@@ -18,6 +18,7 @@ function drawImage(image) {
 
 export default class ImageController {
   constructor() {
-
+    console.log('imagecontroller created')
+    imageService.getImage(drawImage)
   }
 }

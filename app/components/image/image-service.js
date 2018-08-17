@@ -14,10 +14,10 @@ export default class ImageService {
 	}
 
 	getImage(callWhenDone) {
-		imgApi.get() //ask about this
+		//ask about this
 		// ^^^^^^^ How do you call this function?
 		console.log("Looking for a good pic")
-		imgApi().then(res => {
+		imgApi.get().then(res => {
 			console.log('Image Data:', res.data)
 			callWhenDone(res.data)
 		})
