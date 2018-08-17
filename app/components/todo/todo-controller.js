@@ -57,27 +57,28 @@ export default class TodoController {
 	addTodoFromForm(e) {
 		e.preventDefault() // <-- hey this time its a freebie don't forget this
 		// TAKE THE INFORMATION FORM THE FORM
-		var form = e.target
-		var todo = {
+		let form = e.target
+		let todo = {
+			description: form.todo.value
 			// DONT FORGET TO BUILD YOUR TODO OBJECT
 		}
 
 		//PASSES THE NEW TODO TO YOUR SERVICE
 		//DON'T FORGET TO REDRAW THE SCREEN WITH THE NEW TODO
 		//YOU SHOULDN'T NEED TO CHANGE THIS
-		// todoService.addTodo(todo, getTodos)
+		todoService.addTodo(todo, getTodos)
 		//^^^^^^^ EXAMPLE OF HOW TO GET YOUR TOODOS AFTER AN EDIT
 	}
 
 	toggleTodoStatus(todoId) {
+		todoService.toggleTodoStatus(todoId, getTodos)
 		// asks the service to edit the todo status
-		// todoService.toggleTodoStatus(todoId, getTodos)
 		// YEP THATS IT FOR ME
 	}
 
 	removeTodo(todoId) {
 		// ask the service to run the remove todo with this id
-
+		todoService.deleteTodo(todoId, getTodos)
 		// ^^^^ THIS LINE OF CODE PROBABLY LOOKS VERY SIMILAR TO THE toggleTodoStatus
 	}
 
