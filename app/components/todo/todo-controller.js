@@ -34,8 +34,10 @@ function draw(todos) {
 	template += `
 <form onsubmit="app.controllers.todoController.addTodoFromForm(e)">
 <input type="text" name"todo" placeholder="Get Milk">
-<button type="submit">Add ToDo</button>
+<button type="submit">Add Item</button>
 `
+
+	document.getElementById('todo').innerHTML = template
 	//DONT FORGET TO LOOP
 }
 
