@@ -7,7 +7,7 @@ let apiUrl = url + encodeURIComponent(url2);
 // @ts-ignore
 const quoteApi = axios.create({
 	baseURL: apiUrl,
-	timeout: 3000
+	timeout: 5000
 });
 
 
