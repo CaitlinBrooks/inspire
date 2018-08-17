@@ -14,7 +14,7 @@ function drawImage(image) {
 
 //maybe target body instead of images?
 
-
+//background repeat?
 
 export default class ImageController {
   constructor() {

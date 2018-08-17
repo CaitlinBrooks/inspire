@@ -3,11 +3,10 @@ import WeatherService from "./weather-service.js";
 var weatherService = new WeatherService()
 
 function drawWeather(weather) {
-	let tempFaran = (weather.data.main.temp * 9 / 5) - 459.67
+	let tempFar = (weather.main.temp * 9 / 5) - 459.67
 	document.getElementById('weather').innerHTML = `
-		<p class="weather">${weather.main}</p>
+		<p class="weather">${tempFar.toFixed(0)}</p>
 		`
-	// < p > math.round(tempFaren)
 }
 
 export default class WeatherController {
