@@ -39,8 +39,8 @@ export default class TodoService {
 	toggleTodoStatus(todoId, draw) {
 		// MAKE SURE WE THINK THIS ONE THROUGH
 		//STEP 1: Find the todo by its index **HINT** todoList
-		var todo = todoList.find(todoElem => todoElem._id); ///MODIFY THIS LINE // Why isn't this let?
-		todo.completed = !todo.completed // can this be true or false? Why not?
+		let todo = todoList.find(todoElem => todoElem._id); ///MODIFY THIS LINE 
+		todo.completed = !todo.completed // can be either true or false, it's a switch to toggle.
 		//STEP 2: Change the completed flag to the opposite of what is is **HINT** todo.completed = !todo.completed
 		todoApi.put(todoId, todo)
 			.then(function (res) {
