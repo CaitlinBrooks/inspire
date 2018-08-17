@@ -4,15 +4,20 @@ import ImageService from "./image-service.js"
 let imageService = new ImageService
 
 function drawImage(image) {
-  console.log(image)
-  // let template = '
-  //   <img src="${image.imgUrl}" alt="imageUrl">
-  //   `
+  console.log(drawImage)
+  document.getElementById('body').style.backgroundImage = `url(${`largeUrl`})`
 }
+// document.body.style.backgroundImage = "${image.imgUrl}">
+// let template = '
+//   <img src="${image.imgUrl}" alt="imageUrl">
+//   `
+
 //maybe target body instead of images?
 
-// document.getElementById('body').innerHTML = template
 
 
 export default class ImageController {
+  constructor() {
+
+  }
 }

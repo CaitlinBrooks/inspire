@@ -4,8 +4,8 @@ import WeatherController from "./components/weather/weather-controller.js";
 class app {
   constructor() {
     this.controllers = {
-      weatherController: new WeatherController()
-      // imageController: new ImageController()
+      weatherController: new WeatherController(),
+      imageController: new ImageController()
       // quoteController: new QuoteController()
       // todoController: new todoController()
     }
