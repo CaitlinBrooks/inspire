@@ -95,7 +95,8 @@ The positioning of elements on the page is not the absolute most crucial thing f
     - Todo's can be added to a list (POST)
     - Todo's can be removed (DELETE)
     - Todo's can be marked complete (PUT)
-    - The todolist shows the total count of tasks currently being tracked
+    - The todolist shows the total count of tasks currently being tracked 
+    <!-- Next action item to add to screen -->
     - The todolist takes advantage of the TodoService to provide persistent data
 ### Finished?
 When You are finished please submit the link to the project in the backpack

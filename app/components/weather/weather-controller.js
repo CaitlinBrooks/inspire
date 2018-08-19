@@ -5,7 +5,7 @@ var weatherService = new WeatherService()
 function drawWeather(weather) {
 	let tempFar = (weather.main.temp * 9 / 5) - 459.67
 	document.getElementById('weather').innerHTML = `
-		<p class="weather">${tempFar.toFixed(0)}</p>
+		<p class="weather">${tempFar.toFixed(0)} degrees</p>
 		<p>Boise, ID</p>
 		`
 }

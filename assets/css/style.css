@@ -4,6 +4,8 @@
 used for todo list when one todo is completed  */
 
 body {
+      color: white;
+      text-shadow: 1px 1px rgb(31, 31, 31);
       height: 100%; 
       background-position: center;
       background-repeat: no-repeat;
