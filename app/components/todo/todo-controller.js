@@ -1,7 +1,5 @@
 import TodoService from "./todo-service.js";
 
-//need to invoke addtodo
-
 
 let todoService = new TodoService
 
@@ -37,7 +35,6 @@ function draw(todos) {
 <button type="submit">Add Item</button>
 </form>
 `
-
 	document.getElementById('todo').innerHTML = template
 	//DONT FORGET TO LOOP
 
@@ -84,7 +81,5 @@ export default class TodoController {
 		todoService.deleteTodo(todoId, getTodos)
 		// ^^^^ THIS LINE OF CODE PROBABLY LOOKS VERY SIMILAR TO THE toggleTodoStatus
 	}
-
-
 
 }
