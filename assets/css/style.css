@@ -24,3 +24,9 @@ body {
   bottom: 5%;
   width: 50%;
 }
+
+.centered {
+  position: sticky;
+  top: 50%;
+  left: 50%;
+}
