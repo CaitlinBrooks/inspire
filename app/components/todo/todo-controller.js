@@ -18,13 +18,13 @@ function draw(todos) {
 		if (completed == false) {
 			template += `
 	<input type="checkbox" id="${todo.description}"onchange="app.controllers.todoController.toggleTodoStatus('${todo._id}')"/>
-	<label for ="${todo.description}">${todo.description}</label><button onclick="app.controllers.todocontroller.removeTodo('${todo._id}')">Delete ToDo</button>
+	<label for ="${todo.description}">${todo.description}</label><button onclick="app.controllers.todocontroller.removeTodo('${todo._id}')">Remove</button>
 	`
 		} else
 			if (completed) {
 				template += `
 				<input type="checkbox" checked id="${todo.description}"onchange="app.controllers.todoController.toggletodoStatus('${todo._id}')" checked/>
-				<label for ="${todo.description}">${todo.description}</label><button onclick="app.controllers.todoController.removeTodo('${todo._id}')">Delete ToDo</button>
+				<label for ="${todo.description}">${todo.description}</label><button onclick="app.controllers.todoController.removeTodo('${todo._id}')">Remove</button>
 				`
 			}
 
