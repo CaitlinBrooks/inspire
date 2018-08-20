@@ -36,6 +36,7 @@ function draw(todos) {
 </form>
 `
 	document.getElementById('todo').innerHTML = template
+
 	//DONT FORGET TO LOOP
 
 }
