@@ -34,6 +34,7 @@ function draw(todos) {
 <input type="text" name="newtodo" placeholder="Buy Milk">
 <button type="submit">Add Item</button>
 </form>
+<p>${todos.length} items left to complete.</p>
 `
 	document.getElementById('todo').innerHTML = template
 
