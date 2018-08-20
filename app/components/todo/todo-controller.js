@@ -31,7 +31,7 @@ function draw(todos) {
 	})
 	template += `
 <form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
-<input type="text" name="newtodo" placeholder="Get Milk">
+<input type="text" name="newtodo" placeholder="Buy Milk">
 <button type="submit">Add Item</button>
 </form>
 `
